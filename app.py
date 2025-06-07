@@ -26,7 +26,7 @@ def create_dummy_features(input_data):
     # Todas las posibles categorías para cada variable categórica
     account_status_options = ['balance_0_to_200', 'balance_over_200', 'negative_balance', 'no_account']
     credit_history_options = ['all_paid_at_bank', 'critical_account', 'existing_paid_duly', 'no_credits_or_all_paid', 'past_payment_delays']
-    purpose_options = ['business', 'domestic_appliances', 'education', 'furniture_equipment', 'new_car', 'other_purpose', 'radio_tv', 'repairs', 'retraining', 'used_car', 'vacation']
+    purpose_options = ['business', 'domestic_appliances', 'education', 'furniture_equipment', 'new_car', 'other_purpose', 'radio_tv', 'repairs', 'retraining', 'used_car']
     savings_account_options = ['no_savings', 'savings_100_to_500', 'savings_500_to_1000', 'savings_below_100', 'savings_over_1000']
     employment_duration_options = ['employed_1_to_4yrs', 'employed_4_to_7yrs', 'employed_less_1yr', 'employed_over_7yrs', 'unemployed']
     personal_status_sex_options = ['female_not_single', 'male_divorced', 'male_married_widowed', 'male_single']
