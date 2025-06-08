@@ -116,9 +116,9 @@ if model is not None:
             'balance_0_to_200', 'balance_over_200', 'negative_balance', 'no_account'
         ])
         
-        savings_account = st.selectbox("Cuenta de ahorros", [
-            'savings_below_100', 'savings_100_to_500', 'savings_500_to_1000',
-            'savings_over_1000', 'no_savings'
+        savings_account = st.selectbox("Cantidad de ahorros en cuenta", [
+            'Debajo de €100', 'Entre €100 y €500', 'Entre €500 y €1000',
+            'Encima de €1000', 'Sin ahorros'
         ])
         
         installment_rate_pct = st.number_input("Porcentaje de cuota (%)", min_value=1, max_value=4, value=2)
