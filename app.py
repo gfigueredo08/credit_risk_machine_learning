@@ -100,12 +100,12 @@ if model is not None:
     with col1:
         st.subheader("Información Básica")
         age_years = st.number_input("Edad (años)", min_value=18, max_value=80, value=35)
-        credit_amount = st.number_input("Monto del crédito", min_value=250, max_value=20000, value=3000)
-        duration_in_months = st.number_input("Duración en meses", min_value=4, max_value=72, value=20)
+        credit_amount = st.number_input("Monto del crédito (en €)", min_value=250, max_value=20000, value=3000)
+        duration_in_months = st.number_input("Duración (en meses)", min_value=4, max_value=72, value=20)
         
         personal_status_sex = st.selectbox("Estado civil y sexo", [
-            'male_single', 'female_single', 'male_married_widowed', 
-            'female_not_single', 'male_divorced'
+            'Masculino - Soltero', 'Femenino - Soltera', 'Masculino - Casado/Viudo', 
+            'Femenino - No soltera', 'Masculino - Divorciado'
         ])
         
         dependents_count = st.number_input("Número de dependientes", min_value=1, max_value=2, value=1)
@@ -113,7 +113,7 @@ if model is not None:
     with col2:
         st.subheader("Información Financiera")
         account_status = st.selectbox("Estado de cuenta", [
-            'balance_0_to_200', 'balance_over_200', 'negative_balance', 'no_account'
+            'Balance entre €0 y €200', 'Balance por encima de €200', 'Balance negativo', 'Sin cuenta'
         ])
         
         savings_account = st.selectbox("Cantidad de ahorros en cuenta", [
@@ -125,43 +125,43 @@ if model is not None:
         existing_credits_count = st.number_input("Número de créditos existentes", min_value=1, max_value=4, value=1)
         
         credit_history = st.selectbox("Historial crediticio", [
-            'no_credits_or_all_paid', 'all_paid_at_bank', 'existing_paid_duly',
-            'past_payment_delays', 'critical_account'
+            'Sin créditos tomados o todos pagos', 'Todo pago en el banco', 'Crédito actual pagado en término',
+            'Créditos previos con pagos atrasados', 'Cuenta crítica - Gran deudor'
         ])
     
     with col3:
         st.subheader("Información Personal")
         employment_duration = st.selectbox("Duración del empleo", [
-            'unemployed', 'employed_less_1yr', 'employed_1_to_4yrs',
-            'employed_4_to_7yrs', 'employed_over_7yrs'
+            'Desempleado', 'Empleado - Menos de 1 año de antigüedad', 'Empleado - Entre 1 y 4 años de antigüedad',
+            'Empleado - Entre 4 y 7 años de antigüedad', 'Empleado - Más de 7 años de antigüedad'
         ])
         
         job_type = st.selectbox("Tipo de trabajo", [
-            'unemployed_unskilled_nonresident', 'unskilled_resident',
-            'skilled_employee', 'management_selfemployed'
+            'Trabajador no clasificado y no residente', 'Trabajador no calsificado y residente',
+            'Trabajador calificado', 'Trabajador independiente'
         ])
         
         purpose = st.selectbox("Propósito del crédito", [
-            'new_car', 'used_car', 'furniture_equipment', 'radio_tv',
-            'domestic_appliances', 'repairs', 'education',
-            'retraining', 'business', 'other_purpose'
+            'Compra de auto nuevo', 'Compra de auto usado', 'Compra de muebles', 'Compra de equipo de radio / tv',
+            'Compra de electrodomésticos', 'Reparaciones del hogar', 'Educación',
+            'Reentrenamiento', 'Negocios', 'Otros'
         ])
         
-        property_type = st.selectbox("Tipo de propiedad", [
-            'real_estate', 'savings_insurance', 'car_other', 'no_property'
+        property_type = st.selectbox("Propiedades del individuo", [
+            'Bienes raíces', 'Seguro de retiro', 'Auto / otros, 'Sin propiedades'
         ])
         
         housing_type = st.selectbox("Tipo de vivienda", [
-            'rent', 'own', 'free'
+            'Alquilada', 'Propia', 'Gratuita'
         ])
         
         residence_since = st.number_input("Años en residencia actual", min_value=1, max_value=4, value=2)
         
         other_installment_plans = st.selectbox("Otros planes de pago", [
-            'bank', 'stores', 'none'
+            'En banco/s', 'En tienda/S', 'Ninguno'
         ])
         
-        telephone = st.selectbox("Teléfono", ['none', 'yes'])
+        telephone = st.selectbox("Posee teléfono?", ['No', 'Sí'])
     
     st.markdown("---")
     
