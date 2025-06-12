@@ -254,6 +254,9 @@ if model is not None:
     
     **Profesor:**
     - Santiago Nuñez Rimedio
+
+    **Link al modelo completo en Google Colab:**
+    - https://colab.research.google.com/drive/1zzoj57D8ErNt32kzF4QrZmVspcBymy3E?usp=sharing
     """)
 
 else:
