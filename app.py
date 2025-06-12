@@ -103,7 +103,7 @@ if model is not None:
         credit_amount = st.number_input("Monto del crédito (en €)", min_value=250, max_value=20000, value=3000)
         duration_in_months = st.number_input("Duración (en meses)", min_value=4, max_value=72, value=20)
         
-        personal_status_sex = st.selectbox("Estado civil y sexo", [
+        personal_status_sex = st.selectbox("Sexo y estado civil", [
             'Masculino - Soltero', 'Femenino - Soltera', 'Masculino - Casado/Viudo', 
             'Femenino - No soltera', 'Masculino - Divorciado'
         ])
@@ -125,7 +125,7 @@ if model is not None:
         existing_credits_count = st.number_input("Número de créditos existentes", min_value=1, max_value=4, value=1)
         
         credit_history = st.selectbox("Historial crediticio", [
-            'Sin créditos tomados o todos pagos', 'Todo pago en el banco', 'Crédito actual pagado en término',
+            'Sin créditos tomados / sin deudas', 'Todo pago en el banco', 'Crédito actual pagado en término',
             'Créditos previos con pagos atrasados', 'Cuenta crítica - Gran deudor'
         ])
     
