@@ -148,7 +148,7 @@ if model is not None:
         ])
         
         property_type = st.selectbox("Propiedades del individuo", [
-            'Bienes raíces', 'Seguro de retiro', 'Auto / otros, 'Sin propiedades'
+            'Bienes raíces', 'Seguro de retiro', 'Auto / otros', 'Sin propiedades'
         ])
         
         housing_type = st.selectbox("Tipo de vivienda", [
