@@ -241,5 +241,20 @@ if model is not None:
     - **Mal Pagador (Clase 2)**: Cliente con alta probabilidad de default
     """)
 
+     # Información adicional
+    st.markdown("---")
+    st.markdown("### 📓 Información del Proyecto")
+    st.write("""
+    Este modelo fue creado para el Trabajo Final de la materia **Big Data & Machine Learning** en la Facultad de Ciencias Económicas de la Universidad de Buenos Aires.
+    
+    **Alumno:**
+    - Gonzalo Fabián Figueredo Ferreyra
+    - Registro 903003
+    - DNI 43.663.146
+    
+    **Profesor:**
+    - Santiago Nuñez Rimedio
+    """)
+
 else:
     st.error("No se pudo cargar el modelo. Verifica que el archivo 'modelo_credito.pkl' esté disponible.")
